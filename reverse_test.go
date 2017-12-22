@@ -2,7 +2,7 @@ package stringutil
 
 import "testing"
 
-func TestReverse(t *testing.T) {
+func TestReversePos(t *testing.T) {
 	posCases := []struct {
 		in, want string
 	}{
@@ -16,7 +16,9 @@ func TestReverse(t *testing.T) {
 			t.Errorf("Reverse(%q) == %q, want %q", c.in, got, c.want)
 		}
 	}
+}
 
+func TestReverseNeg(t *testing.T) {
 	negCases := []struct {
 		in, noWant string
 	}{
