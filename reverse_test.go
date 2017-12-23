@@ -26,7 +26,6 @@ func TestReverseNeg(t *testing.T) {
 		{"Hello, 世界", "界世, olleH"},
 		{"", " "},
 		{"something", "nothing"},
-		{"blah", "halb"},
 	}
 	for _, c := range negCases {
 		got := Reverse(c.in)
